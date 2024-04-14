@@ -105,13 +105,13 @@ export const CHART_FONT_FAMILY =
 export const DEFAULT_LINE_CHART = {
   type: 'line',
   fill: false,
-  borderColor: '#779BBB',
-  pointBackgroundColor: '#779BBB',
+  borderColor: '#5a8016',
+  pointBackgroundColor: '#5a8016',
 };
 
 export const DEFAULT_BAR_CHART = {
   type: 'bar',
-  backgroundColor: 'rgb(31, 147, 255)',
+  backgroundColor: 'rgb(135, 190, 34)',
 };
 
 export const DEFAULT_CHART = {

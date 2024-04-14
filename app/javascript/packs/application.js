@@ -21,6 +21,7 @@ import store from '../dashboard/store';
 import constants from 'dashboard/constants/globals';
 import * as Sentry from '@sentry/vue';
 import 'vue-easytable/libs/theme-default/index.css';
+import './custom-vue-easytable.css';
 import { Integrations } from '@sentry/tracing';
 import {
   initializeAnalyticsEvents,

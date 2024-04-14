@@ -11,6 +11,8 @@ const {
   redDark,
   violet,
   violetDark,
+  lime,
+  limeDark,
 } = require('@radix-ui/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
@@ -26,6 +28,11 @@ module.exports = {
     './app/views/**/*.html.erb',
   ],
   theme: {
+    extend: {
+      fontFamily: {
+        inter: ['Inter', ...defaultTheme.fontFamily.sans],
+      },
+    },
     fontSize: {
       ...defaultTheme.fontSize,
       xxs: '0.625rem',
@@ -41,14 +48,14 @@ module.exports = {
         50: blue.blue3,
         75: blue.blue4,
         100: blue.blue5,
-        200: blue.blue7,
-        300: blue.blue8,
+        200: lime.lime7,
+        300: lime.lime8,
         400: blueDark.blue11,
-        500: blueDark.blue10,
-        600: blueDark.blue9,
-        700: blueDark.blue8,
-        800: blueDark.blue6,
-        900: blueDark.blue2,
+        500: limeDark.lime11,
+        600: limeDark.lime7,
+        700: limeDark.lime8,
+        800: limeDark.lime8,
+        900: limeDark.lime2,
       },
       green: {
         50: greenDark.green12,
@@ -117,7 +124,7 @@ module.exports = {
         100: violetDark.violet12,
         200: violet.violet6,
         300: violet.violet8,
-        400: violet.violet11,
+        400: lime.lime11,
         500: violet.violet9,
         600: violetDark.violet8,
         700: violetDark.violet7,

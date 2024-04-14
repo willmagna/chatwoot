@@ -1,0 +1,40 @@
+
+.ve-pagination .ve-pagination-goto .ve-pagination-goto-input:focus {
+  outline: none !important;
+  border-color: #87be22 !important;
+}
+.ve-pagination .ve-pagination-goto .ve-pagination-goto-input:hover {
+  border-color: #87be22 !important;
+}
+.ve-pagination .ve-pagination-li a {
+  color: #000000d9;
+}
+.ve-pagination .ve-pagination-li:hover {
+  border-color: #87be22 !important;
+}
+.ve-pagination .ve-pagination-li:hover a {
+  color: #87be22 !important;
+}
+.ve-pagination .ve-pagination-li.ve-pagination-li-active {
+  border-color: #87be22 !important;
+}
+.ve-pagination .ve-pagination-li.ve-pagination-li-active a {
+  font-weight: bold;
+  color: #87be22 !important;
+}
+.ve-pagination .ve-pagination-li.ve-pagination-li-active:hover {
+  border-color: #87be22 !important;
+}
+.ve-pagination .ve-pagination-li.ve-pagination-li-active:hover a {
+  font-weight: bold;
+  color: #87be22 !important;
+}
+.ve-pagination .ve-pagination-prev:hover i,
+.ve-pagination .ve-pagination-next:hover i {
+  color: #87be22 !important;
+}
+.ve-pagination .ve-pagination-jump-prev:hover i,
+.ve-pagination .ve-pagination-jump-next:hover i {
+  display: inline;
+  color: #87be22 !important;
+}
