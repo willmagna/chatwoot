@@ -96,7 +96,7 @@ export const colors = {
     100: violetDark.violet12,
     200: violet.violet6,
     300: violet.violet8,
-    400: lime.lime11,
+    400: violet.violet11,
     500: violet.violet9,
     600: violetDark.violet8,
     700: violetDark.violet7,
