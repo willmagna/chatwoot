@@ -11,7 +11,7 @@ Bundler.require(*Rails.groups)
 ## Load the specific APM agent
 # We rely on DOTENV to load the environment variables
 # We need these environment variables to load the specific APM agent
-Dotenv::Railtie.load
+Dotenv::Rails.load
 require 'ddtrace' if ENV.fetch('DD_TRACE_AGENT_URL', false).present?
 require 'elastic-apm' if ENV.fetch('ELASTIC_APM_SECRET_TOKEN', false).present?
 require 'scout_apm' if ENV.fetch('SCOUT_KEY', false).present?
@@ -54,12 +54,12 @@ module Chatwoot
     config.active_record.yaml_column_permitted_classes = [ActiveSupport::HashWithIndifferentAccess]
 
     # Allow iFrame
-    # config.action_dispatch.default_headers = {
-    #   'X-Frame-Options' => 'ALLOWALL'
-    # }
-    config.action_dispatch.default_headers.merge!({
+    config.action_dispatch.default_headers = {
       'X-Frame-Options' => 'ALLOWALL'
-    })
+    }
+    # config.action_dispatch.default_headers.merge!({
+    #   'X-Frame-Options' => 'ALLOWALL'
+    # })
 
   end
 
