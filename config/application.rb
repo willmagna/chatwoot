@@ -54,9 +54,13 @@ module Chatwoot
     config.active_record.yaml_column_permitted_classes = [ActiveSupport::HashWithIndifferentAccess]
 
     # Allow iFrame
-    config.action_dispatch.default_headers = {
+    # config.action_dispatch.default_headers = {
+    #   'X-Frame-Options' => 'ALLOWALL'
+    # }
+    config.action_dispatch.default_headers.merge!({
       'X-Frame-Options' => 'ALLOWALL'
-    }
+    })
+
   end
 
   def self.config
