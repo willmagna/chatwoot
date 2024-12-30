@@ -11,8 +11,7 @@ import {
   CHATWOOT_SET_USER,
 } from '../../constants/appEvents';
 
-// Cookies.defaults = { sameSite: 'Lax' };
-Cookies.defaults = { sameSite: 'None' };
+Cookies.defaults = { sameSite: 'Lax' };
 
 export const getLoadingStatus = state => state.fetchAPIloadingStatus;
 export const setLoadingStatus = (state, status) => {
