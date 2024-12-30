@@ -66,7 +66,8 @@ describe('setCookieWithDomain', () => {
 
     expect(Cookies.set).toHaveBeenCalledWith('myCookie', 'cookieValue', {
       expires: 365,
-      sameSite: 'Lax',
+      // sameSite: 'Lax',
+      sameSite: 'None',
       domain: undefined,
     });
   });
@@ -78,7 +79,8 @@ describe('setCookieWithDomain', () => {
 
     expect(Cookies.set).toHaveBeenCalledWith('myCookie', 'cookieValue', {
       expires: 30,
-      sameSite: 'Lax',
+      // sameSite: 'Lax',
+      sameSite: 'None',
       domain: undefined,
     });
   });
@@ -90,7 +92,8 @@ describe('setCookieWithDomain', () => {
 
     expect(Cookies.set).toHaveBeenCalledWith('myCookie', 'cookieValue', {
       expires: 365,
-      sameSite: 'Lax',
+      // sameSite: 'Lax',
+      sameSite: 'None',
       domain: 'example.com',
     });
   });
@@ -109,7 +112,8 @@ describe('setCookieWithDomain', () => {
       JSON.stringify({ value: 'cookieValue' }),
       {
         expires: 365,
-        sameSite: 'Lax',
+        // sameSite: 'Lax',
+        sameSite: 'None',
         domain: 'example.com',
       }
     );
@@ -123,7 +127,8 @@ describe('setCookieWithDomain', () => {
 
     expect(Cookies.set).toHaveBeenCalledWith('myCookie', 'cookieValue', {
       expires: 7,
-      sameSite: 'Lax',
+      // sameSite: 'Lax',
+      sameSite: 'None',
       domain: 'example.com',
     });
   });
