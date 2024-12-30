@@ -59,9 +59,15 @@ module Chatwoot
     # FIX ME : fixes breakage of installation config. we need to migrate.
     config.active_record.yaml_column_permitted_classes = [ActiveSupport::HashWithIndifferentAccess]
 
-    config.action_dispatch.default_headers = {
-      'X-Frame-Options' => 'ALLOWALL'
-    }
+    # config.action_dispatch.default_headers = {
+    #   'X-Frame-Options' => 'ALLOWALL'
+    # }
+    config.action_dispatch.default_headers.merge!({
+      'X-Frame-Options' => 'ALLOWALL',
+      'Content-Security-Policy' => "frame-ancestors *;"
+      # 'Content-Security-Policy' => "frame-ancestors 'self' https://your-trusted-domain.com;"
+    })
+
   end
 
   def self.config
