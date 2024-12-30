@@ -60,8 +60,7 @@ module Chatwoot
     config.active_record.yaml_column_permitted_classes = [ActiveSupport::HashWithIndifferentAccess]
 
     config.action_dispatch.default_headers = {
-      'X-Frame-Options' => 'ALLOWALL',
-      'Permissions-Policy' => "fullscreen=(), geolocation=(), camera=()"
+      'X-Frame-Options' => 'ALLOWALL'
     }
   end
 
