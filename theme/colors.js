@@ -1,6 +1,4 @@
 const {
-  blue,
-  blueDark,
   green,
   greenDark,
   yellow,
@@ -11,22 +9,24 @@ const {
   redDark,
   violet,
   violetDark,
+  lime,
+  limeDark,
 } = require('@radix-ui/colors');
 
 export const colors = {
   woot: {
-    25: blue.blue2,
-    50: blue.blue3,
-    75: blue.blue4,
-    100: blue.blue5,
-    200: blue.blue7,
-    300: blue.blue8,
-    400: blueDark.blue11,
-    500: blueDark.blue10,
-    600: blueDark.blue9,
-    700: blueDark.blue8,
-    800: blueDark.blue6,
-    900: blueDark.blue2,
+    25: lime.lime2,
+    50: lime.lime3,
+    75: lime.lime4,
+    100: lime.lime5,
+    200: lime.lime7,
+    300: lime.lime8,
+    400: limeDark.lime11,
+    500: lime.lime11,
+    600: limeDark.lime7,
+    700: limeDark.lime8,
+    800: limeDark.lime8,
+    900: limeDark.lime2,
   },
   green: {
     50: greenDark.green12,
@@ -211,7 +211,7 @@ export const colors = {
     },
 
     black: '#000000',
-    brand: '#2781F6',
+    brand: '#009000',
     background: 'rgb(var(--background-color) / <alpha-value>)',
     solid: {
       1: 'rgb(var(--solid-1) / <alpha-value>)',
